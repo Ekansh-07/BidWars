@@ -1,0 +1,67 @@
+/* Profile container */
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Profile image */
+  .profile div {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile div img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  /* Profile name */
+  .profile h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /* Profile auctions container */
+  .profile-auctions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Auction card */
+  .auction-card {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    max-height: fit-content;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .auction-card img{
+    width: 300px;
+    height: 300px;
+    object-fit: fill;
+    
+  }
+
+  .auction-card h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .auction-card p {
+    margin-bottom: 10px;
+  }
